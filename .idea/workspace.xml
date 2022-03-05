@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d3eb850d-dc3f-4215-aa59-eb9fbf391754" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,26 +36,51 @@
       <updated>1646464165286</updated>
       <workItem from="1646464197203" duration="11569000" />
       <workItem from="1646478881682" duration="28000" />
-      <workItem from="1646479237033" duration="46000" />
+      <workItem from="1646479237033" duration="113000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1646479301413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646479301413</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="595" y="134" key="CommitChangelistDialog2" timestamp="1646478900530">
-      <screen x="71" y="0" width="1849" height="1080" />
+    <state x="2224" y="134" width="885" height="912" key="CommitChangelistDialog2" timestamp="1646479301212">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
+    <state x="2224" y="134" width="885" height="912" key="CommitChangelistDialog2/1680.0.1920.1080/0.27.1680.1023@1680.0.1920.1080" timestamp="1646479301212" />
     <state x="595" y="134" key="CommitChangelistDialog2/71.0.1849.1080@71.0.1849.1080" timestamp="1646478900530" />
+    <state x="1895" y="105" width="1536" height="894" key="MergeDialog" timestamp="1646479334923">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1895" y="105" width="1536" height="894" key="MergeDialog/1680.0.1920.1080/0.27.1680.1023@1680.0.1920.1080" timestamp="1646479334923" />
+    <state x="2378" y="270" width="580" height="564" key="MultipleFileMergeDialog" timestamp="1646479334928">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2378" y="270" width="580" height="564" key="MultipleFileMergeDialog/1680.0.1920.1080/0.27.1680.1023@1680.0.1920.1080" timestamp="1646479334928" />
     <state x="501" y="211" key="SettingsEditor" timestamp="1646465628549">
       <screen x="71" y="0" width="1849" height="1080" />
     </state>
     <state x="501" y="211" key="SettingsEditor/71.0.1849.1080@71.0.1849.1080" timestamp="1646465628549" />
-    <state x="2308" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1646479237364">
+    <state x="2268" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1646479313992">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2308" y="364" key="com.intellij.ide.util.TipDialog/1680.0.1920.1080/0.27.1680.1023@1680.0.1920.1080" timestamp="1646479237364" />
+    <state x="2268" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.27.1680.1023@1680.0.1920.1080" timestamp="1646479313992" />
+    <state x="2308" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1646479373999">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2308" y="364" key="com.intellij.ide.util.TipDialog/1680.0.1920.1080/0.27.1680.1023@1680.0.1920.1080" timestamp="1646479373999" />
     <state x="676" y="364" key="com.intellij.ide.util.TipDialog/71.0.1849.1080@71.0.1849.1080" timestamp="1646478881819" />
     <state x="658" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1646470638848">
       <screen x="71" y="0" width="1849" height="1080" />
