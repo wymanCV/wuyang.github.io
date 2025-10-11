@@ -1,5 +1,5 @@
 // Filter publications by category
-function filterPublications(category) {
+function filterPublications(category, element) {
   // Get all paper items
   const papers = document.querySelectorAll('.paper-item');
   
@@ -14,9 +14,9 @@ function filterPublications(category) {
   });
   
   // Set active button
-  event.target.style.backgroundColor = '#b60101';
-  event.target.style.color = 'white';
-  event.target.classList.add('active');
+  element.style.backgroundColor = '#1772d0';
+  element.style.color = 'white';
+  element.classList.add('active');
   
   // Filter papers
   papers.forEach(paper => {
