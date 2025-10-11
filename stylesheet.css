@@ -157,3 +157,29 @@ span.highlight {
   opacity: 0;
   transform: scale(0.95);
 }
+
+/* Conference venue badge styling */
+.venue-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-right: 8px;
+  color: white;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* Red background for prestigious presentations (Oral, Spotlight, Highlight, Best Paper) */
+.venue-highlight {
+  background-color: #b60101;
+}
+
+/* Deep blue for regular conference papers */
+.venue-regular {
+  background-color: #1772d0;
+}
