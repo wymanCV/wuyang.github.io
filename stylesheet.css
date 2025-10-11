@@ -189,3 +189,46 @@ span.highlight {
 .venue-regular {
   background-color: #1772d0;
 }
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  body,
+  td,
+  th,
+  tr,
+  p,
+  a {
+    font-size: 16px !important;
+  }
+  
+  strong {
+    font-size: 16px !important;
+  }
+  
+  papertitle {
+    font-size: 16px !important;
+  }
+  
+  name {
+    font-size: 28px !important;
+  }
+  
+  heading {
+    font-size: 20px !important;
+  }
+  
+  table {
+    max-width: 100% !important;
+  }
+  
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  .filter-btn {
+    padding: 8px 12px !important;
+    font-size: 13px !important;
+    margin-bottom: 8px !important;
+  }
+}
