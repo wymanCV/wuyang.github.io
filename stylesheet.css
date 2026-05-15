@@ -138,13 +138,25 @@ heading {
 
 papertitle {
   color: var(--ink);
-  display: inline-block;
+  display: inline;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.35;
-  margin: 4px 0;
-  overflow-wrap: anywhere;
+  margin: 0;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.title-keep {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+  .title-keep {
+    white-space: normal;
+  }
 }
 
 name {
@@ -351,14 +363,27 @@ li {
 }
 
 .paper-item img,
-.three img {
+.paper-item video,
+.three img,
+.three video {
   border-radius: 8px;
   height: auto;
   max-width: 100%;
 }
 
-.paper-item img {
+.paper-item img,
+.paper-item video {
+  background: var(--soft);
   box-shadow: 0 10px 24px rgba(24, 34, 53, 0.08);
+}
+
+.paper-media {
+  display: block;
+  object-fit: contain;
+}
+
+.summary-text {
+  text-wrap: pretty;
 }
 
 .one {
@@ -516,7 +541,8 @@ span.highlight {
     min-height: 42px;
   }
 
-  .paper-item img {
+  .paper-item img,
+  .paper-item video {
     display: block;
     margin: 0 auto 6px;
     max-width: 320px;

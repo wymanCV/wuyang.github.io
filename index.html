@@ -104,6 +104,15 @@
                   <h2>💥 News</h2>
 
                   <ul class="news-list">
+
+
+                    <li>[05-2026] Check out our latest AI for Digital Twins work after SVI: <strong>EverAnimate</strong>,
+                      <strong>SurgVista</strong>, and <strong>Drift-Resistant Navigation World Model</strong>, covering
+                      digital human animation, surgical world modeling, and navigation world models.</li>
+
+                    <li>[03-2026] Our work <strong>Deformable Gaussian Occupancy (DeGO)</strong> has been accepted to
+                      <strong>CVPR 2026</strong>. Congrats to Yang!</li>
+
                     <li>[02-2026] Our work <a
                         href="https://stable-video-infinity.github.io/homepage/"><strong>Stable Video Infinity
                           (SVI)</strong></a> has been selected for an <strong><span
@@ -141,8 +150,8 @@
                       <strong>NeurIPS 2024</strong>. Congrats to Chenxin.</li>
                     <li><span style="color: #b60101;"><strong>[Milestone] From 08/2021 to 08/2024, my first-author
                           works were selected for Oral presentations at four computer-vision conferences: CVPR, ICCV,
-                          ECCV, and AAAI.</strong></span></li>
-                    <li>[08-2024] CLIFF was selected for an <span style="color: #b60101;"><strong>Oral
+                          ECCV, and AAAI and Best Paper Finalist at CVPR 2022.</strong></span></li>
+                    <!-- <li>[08-2024] CLIFF was selected for an <span style="color: #b60101;"><strong>Oral
                           Presentation</strong></span> at ECCV.</li>
                     <li>[07-2024] We are organizing <a href="https://aim-fm-24.github.io/NeurIPS/">the first workshop on
                         multimodal medical foundation models</a> at NeurIPS; <a
@@ -169,7 +178,7 @@
                     <li>[03-2022] Two papers have been accepted to <strong>CVPR 2022</strong>, including one <span
                         style="color: #b60101;"><strong>Oral Presentation</strong></span>.</li>
                     <li>[10-2021] SCAN has been accepted to <strong>AAAI 2022</strong> (<span
-                        style="color: #b60101;"><strong>Oral Presentation</strong></span>).</li>
+                        style="color: #b60101;"><strong>Oral Presentation</strong></span>).</li> -->
                   </ul>
 
                 </td>
@@ -183,7 +192,7 @@
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <h2>📑 Selected Publications</h2>
-                  <p class="section-note">* denotes equal contribution; <span
+                  <p class="section-note">* denotes equal contribution; &dagger; denotes project leader; <span
                       class="highlight-label">Highlighted</span>
                     papers are representative first-author works</p>
                   <div class="publication-filters">
@@ -227,48 +236,133 @@
                   <br>
                   <strong>Wuyang Li</strong>, Wentao Pan, Po-Chien Luan, Yang Gao, Alexandre Alahi
                   <br>
-                  <a href="https://stable-video-infinity.github.io/homepage/">project page</a>
+                  <a href="https://stable-video-infinity.github.io/homepage/">Project Page</a>
                   /
-                  <a href="https://arxiv.org/abs/2510.09212">paper</a>
+                  <a href="https://arxiv.org/abs/2510.09212">Paper</a>
                   /
-                  <a href="https://www.youtube.com/watch?v=p71Wp1FuqTw&amp;feature=youtu.be">youtube</a>
+                  <a href="https://www.youtube.com/watch?v=p71Wp1FuqTw&amp;feature=youtu.be">YouTube</a>
                   /
-                  <a href="https://github.com/vita-epfl/Stable-Video-Infinity">code</a>
+                  <a href="https://github.com/vita-epfl/Stable-Video-Infinity">Code</a>
                   <br><strong>Keywords</strong>: Long Video Generation; End-to-end Filming; Human Talking/Dancing
                   Animation
-                  <br><strong>Summary</strong>: Stable Video Infinity (SVI) generates arbitrary-length videos with
-                  high temporal consistency, plausible scene transitions, and controllable streaming storylines across
-                  domains. SVI incorporates <em><strong>Error-Recycling Fine-Tuning</strong></em>, a new type of
-                  efficient training that recycles the Diffusion Transformer (DiT)’s self-generated errors into
-                  supervisory prompts, thereby encouraging DiT to <em>actively correct its own errors</em>.
+                  <br><strong>Summary</strong>: <span class="summary-text">Stable Video Infinity (SVI) generates
+                  arbitrary-length videos with consistent motion, plausible scene transitions, and controllable
+                  streaming storylines. Its Error-Recycling Fine-Tuning turns self-generated failures into supervision,
+                  helping the model correct long-horizon drift across extended generation.</span>
                 </td>
               </tr>
-              <tr class="paper-item" data-category="autonomous-mobility" onmouseout="nerfsuper_stop()"
+              <tr class="paper-item" data-category="digital-twins" onmouseout="nerfsuper_stop()"
                 onmouseover="nerfsuper_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="three">
-                    <img src="images/fvg.gif" width="250" alt="" loading="lazy">
+                    <video class="paper-media" width="250" autoplay muted loop playsinline preload="metadata"
+                      poster="images/everanimate.png" aria-label="EverAnimate video preview">
+                      <source src="video/everanimate.mp4" type="video/mp4">
+                    </video>
                   </div>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <span class="venue-badge venue-regular">ArXiv 2025</span>
-                  <a href="https://vita-epfl.github.io/FVG/">
-                    <papertitle>Factorized Video Generation: Decoupling Scene Construction and Temporal Synthesis in
+                  <span class="venue-badge venue-regular">ArXiv 2026</span>
+                  <papertitle>EverAnimate: Minute-Scale Human Animation via Latent Flow Restoration</papertitle>
+                  <br>
+                  <strong>Wuyang Li</strong>, Yang Gao, Mariam Hassan, Lan Feng, Wentao Pan, Po-Chien Luan, Alexandre
+                  Alahi
+                  <br>
+                  <a href="https://everanimate.github.io/homepage/">Project Page</a>
+                  /
+                  <a href="https://arxiv.org/abs/2605.15042">Paper</a>
+                  /
+                  Code
+                  <br><strong>Keywords</strong>: Digital Human; Minute-Scale Animation; Latent Flow Restoration
+                  <br><strong>Summary</strong>: <span class="summary-text">EverAnimate enables minute-scale human
+                  animation while preserving character identity and visual quality over long sequences. It uses
+                  persistent latent memory with latent propagation and restorative flow matching to reduce both identity
+                  and quality drift.</span>
+                </td>
+              </tr>
+              <tr class="paper-item" data-category="digital-twins transforming-medicine"
+                onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="three">
+                    <video class="paper-media" width="250" autoplay muted loop playsinline preload="metadata"
+                      poster="images/surgvista_teaser.png" aria-label="SurgVista video preview">
+                      <source src="video/surgvista.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <span class="venue-badge venue-regular">ArXiv 2026</span>
+                  <papertitle>SurgVista: Long-Horizon Surgical World Modeling with Plausible
+                    <span class="title-keep">Instrument-Tissue Dynamics</span></papertitle>
+                  <br>
+                  Wentao Pan, <strong>Wuyang Li<sup>&dagger;</sup></strong>, Shengyuan Liu, Xinyu Liu, Hengyu Liu,
+                  Yixuan Yuan
+                  <br>
+                  Project Page
+                  /
+                  Paper
+                  /
+                  Code
+                  <br>
+                  <strong>Keywords</strong>: Surgical World Model; Digital Twin; Instrument-Tissue Dynamics
+                  <br><strong>Summary</strong>: <span class="summary-text">SurgVista builds a long-horizon surgical
+                  world model for plausible instrument-tissue dynamics and action-conditioned simulation. It improves
+                  temporal stability with deformation consistency regularization and drift adaptation training in the challenging in-vivo scenarios.</span>
+                </td>
+              </tr>
+              <tr class="paper-item" data-category="digital-twins autonomous-mobility"
+                onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="three">
+                    <img class="paper-media" src="video/wm.gif" width="250"
+                      alt="Drift-resistant navigation world model video preview" loading="lazy">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <span class="venue-badge venue-regular">ArXiv 2026</span>
+                  <papertitle>Drift-Resistant Navigation World Model with Anchored Epipolar Guidance</papertitle>
+                  <br>
+                  Po-Chien Luan, Zimin Xia, <strong>Wuyang Li</strong>, Yang Gao, Alexandre Alahi
+                  <br>
+                  Project Page
+                  /
+                  Paper
+                  /
+                  Code
+                  <br>
+                  <strong>Keywords</strong>: Navigation World Model; Digital Twin; Epipolar Guidance
+                  <br><strong>Summary</strong>: <span class="summary-text">This navigation world model uses sparse
+                  future anchors and bidirectional epipolar guidance to reduce perceptual and geometric drift. It
+                  improves long-horizon visual quality, multi-view consistency, and downstream planning reliability.</span>
+                </td>
+              </tr>
+              <tr class="paper-item" data-category="digital-twins" onmouseout="nerfsuper_stop()"
+                onmouseover="nerfsuper_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="three">
+                    <img src="images/fvg.gif" width="250" alt="Anchored Video Generation teaser" loading="lazy">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <span class="venue-badge venue-regular">ArXiv 2026</span>
+                  <a href="https://arxiv.org/abs/2512.16371">
+                    <papertitle>Anchored Video Generation: Decoupling Scene Construction and Temporal Synthesis in
                       Text-to-Video Diffusion Models
                     </papertitle>
                   </a>
                   <br>
                   Mariam Hassan, Bastien Van Delft, <strong>Wuyang Li</strong>, Alexandre Alahi
                   <br>
-                  <a href="https://vita-epfl.github.io/FVG/">project page</a>
+                  <a href="https://vita-epfl.github.io/FVG/">Project Page</a>
                   /
-                  <a href="https://arxiv.org/abs/2512.16371">paper</a>
+                  <a href="https://arxiv.org/abs/2512.16371">Paper</a>
                   /
-                  <a href="https://github.com/vita-epfl/FVG/tree/main">code (coming)</a>
-                  <br><strong>Keywords</strong>: Video Factorization; Text-to-Video Diffusion Models
-                  <br><strong>Summary</strong>: We propose Factorized Video Generation (FVG), a simple yet effective
-                  pipeline that decomposes text-to-video generation into three stages: reasoning, composition, and
-                  temporal synthesis.
+                  <a href="https://github.com/vita-epfl/FVG/tree/main">Code (Coming)</a>
+                  <br><strong>Keywords</strong>: Anchored Video Generation; Text-to-Video; Efficient Sampling
+                  <br><strong>Summary</strong>: <span class="summary-text">Anchored Video Generation (AVG) separates
+                  text-to-video generation into reasoning, anchor-frame composition, and temporal synthesis. This
+                  anchored workflow improves compositional benchmarks while reducing sampling steps by 70% without
+                  performance loss.</span>
                 </td>
               </tr>
 
@@ -293,17 +387,39 @@
                   Alexandre
                   Alahi
                   <br>
-                  <a href="https://alan-lanfeng.github.io/RAP/">project page</a> /
-                  <a href="https://arxiv.org/pdf/2510.04333">paper</a> /
-                  <a href="https://github.com/vita-epfl/RAP">code</a>
+                  <a href="https://alan-lanfeng.github.io/RAP/">Project Page</a> /
+                  <a href="https://arxiv.org/pdf/2510.04333">Paper</a> /
+                  <a href="https://github.com/vita-epfl/RAP">Code</a>
                   <br><strong>Keywords</strong>: End-to-End Planning; 3D Rasterization; Data Scaling
-                  <br><strong>Summary</strong>: We propose RAP, a Raster-to-Real feature-space alignment that bridges
-                  the
-                  sim-to-real gap without requiring pixel-level realism. RAP ranks 1st in the Waymo Open Dataset
-                  Vision-based
-                  End-to-End Driving Challenge 2025 (UniPlan entry), the Waymo Open Dataset Vision-based E2E Driving
-                  Leaderboard,
-                  NAVSIM v1 navtest, and NAVSIM v2 navhard.
+                  <br><strong>Summary</strong>: <span class="summary-text">RAP aligns rasterized simulation features
+                  with real driving features, bridging sim-to-real gaps without pixel-level realism. It achieved leading
+                  results across the Waymo E2E Driving and NAVSIM planning benchmarks.</span>
+                </td>
+              </tr>
+              <tr class="paper-item" data-category="autonomous-mobility" onmouseout="nerfsuper_stop()"
+                onmouseover="nerfsuper_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="three">
+                    <img src="images/dego.png" width="250" alt="DeGO teaser" loading="lazy">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <span class="venue-badge venue-regular">CVPR 2026</span>
+                  <papertitle>Deformable Gaussian Occupancy: Decoupling Rigid and Nonrigid Motion with Factorized
+                    Distillation</papertitle>
+                  <br>
+                  Yang Gao, <strong>Wuyang Li<sup>&dagger;</sup></strong>, Po-Chien Luan, Alexandre Alahi
+                  <br>
+                  Project Page
+                  /
+                  Paper
+                  /
+                  <a href="https://github.com/vita-epfl/DeGO">Code</a>
+                  <br><strong>Keywords</strong>: 3D Occupancy Prediction; Deformable Gaussians; Foundation Distillation
+                  <br><strong>Summary</strong>: <span class="summary-text">DeGO models dynamic 3D scenes with
+                  deformable Gaussian occupancy and decouples rigid from nonrigid motion. Factorized foundation-model
+                  distillation improves temporal consistency and weakly supervised occupancy prediction, especially for
+                  human-centric instances.</span>
                 </td>
               </tr>
               <tr class="paper-item" data-category="autonomous-mobility" onmouseout="nerfsuper_stop()"
@@ -322,21 +438,17 @@
                   <br>
                   <strong>Wuyang Li</strong>, Zhuy Yu, Alexandre Alahi
                   <br>
-                  <a href="https://vita-epfl.github.io/VoxDet/">project page</a>
+                  <a href="https://vita-epfl.github.io/VoxDet/">Project Page</a>
                   /
-                  <a href="https://github.com/vita-epfl/VoxDet/blob/main/assets/VoxDet_ArXiv.pdf">paper</a>
+                  <a href="https://github.com/vita-epfl/VoxDet/blob/main/assets/VoxDet_ArXiv.pdf">Paper</a>
                   /
 
-                  <a href="https://github.com/vita-epfl/VoxDet">code</a>
+                  <a href="https://github.com/vita-epfl/VoxDet">Code</a>
 
                   <br><strong>Keywords</strong>: 3D Semantic Occupancy Prediction; Dense Object Detection
-                  <br><strong>Summary</strong>: 3D semantic occupancy prediction aims to reconstruct the 3D geometry and
-                  semantics of the surrounding environment. With dense voxel labels, prior works typically formulate it
-                  as a dense segmentation task, independently classifying each voxel without instance-level perception.
-                  In contrast, VoxDet addresses semantic occupancy prediction with an
-                  instance-centric
-                  formulation inspired by dense object detection and uses VoxNT to transfer
-                  voxel-level class labels to instance-level offset labels.
+                  <br><strong>Summary</strong>: <span class="summary-text">VoxDet reframes 3D semantic occupancy as dense object detection rather than voxel-wise segmentation. Its
+                  instance-centric formulation transfers voxel labels into object offsets, improving semantic occupancy
+                  understanding.</span>
                 </td>
               </tr>
 
@@ -357,14 +469,10 @@
           <br>
           Pengteng Li, Pinhao Song <strong>Wuyang Li</strong>, Weiyu Guo, Huizai Yao, Yijie Xu, Dugang Liu, Hui Xiong
           <br>
-          <a href="https://arxiv.org/pdf/2509.16087">paper</a>
+          <a href="https://arxiv.org/pdf/2509.16087">Paper</a>
           <br><strong>Keywords</strong>: Spatial Understanding; Multimodal Large Language Model
-          <br><strong>Summary</strong>: We introduce SEE&amp;TREK, the first training-free prompting framework tailored to
-          enhance the spatial understanding of multimodal large language models (MLLMs) under vision-only constraints.
-          While prior efforts have incorporated
-          modalities like depth or point clouds to improve spatial reasoning, purely visual-spatial understanding remains
-          underexplored. SEE&amp;TREK addresses this gap by
-          focusing on two core principles: increasing visual diversity and motion reconstruction.
+          <br><strong>Summary</strong>: <span class="summary-text">SEE&amp;TREK is a training-free visual prompting framework for improving MLLM spatial understanding. It
+                  strengthens visual-spatial reasoning through diversified views and motion reconstruction cues.</span>
         </td>
       </tr>
       <tr class="paper-item" data-category="scientific-innovation transforming-medicine" onmouseout="nerfsuper_stop()"
@@ -385,16 +493,13 @@
           Din
           Ping Tsai, Mu Ku Chen, Yixuan Yuan
           <br>
-          <a href="https://cuhk-aim-group.github.io/MetaScope/">project page</a>
+          <a href="https://cuhk-aim-group.github.io/MetaScope/">Project Page</a>
           /
-          <a>paper</a>/
-          <a href="https://github.com/CUHK-AIM-Group/MetaScope">code (coming)</a>
+          <a>Paper</a>/
+          <a href="https://github.com/CUHK-AIM-Group/MetaScope">Code (Coming)</a>
           <br><strong>Keywords</strong>: Metalenses, Computational Photography, Endoscopy, Optical Imaging
-          <br><strong>Summary</strong>: Unlike conventional endoscopes limited by millimeter-scale thickness, metalenses
-          operate at the micron scale, serving as a promising solution for ultra-miniaturized endoscopy. However,
-          metalenses suffer from intensity decay and chromatic aberration. To address this, we developed MetaScope, an
-          optics-driven neural network for metalens-based endoscopy, offering a promising pathway for next-generation
-          ultra-miniaturized medical imaging devices.
+          <br><strong>Summary</strong>: <span class="summary-text">MetaScope pairs ultra-thin metalens optics with an optics-driven neural network for miniaturized endoscopy. It
+                  corrects intensity decay and chromatic aberration to enable clearer micro-scale medical imaging.</span>
         </td>
       </tr>
       <tr class="paper-item" data-category="digital-twins" onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
@@ -413,17 +518,14 @@
           <br>
           Parker Liu, Chenxin Li, Zhengxin Li, Yipeng Wu, <strong>Wuyang Li</strong>, Zhiqin Yang,
           Zhenyue Zhang, Yunlong Lin, Sirui Han, Brandon Y. Feng <br>
-          <a href="https://ir3d-bench.github.io/">project page</a> /
-          <a href="https://ieeexplore.ieee.org/document/10012542">paper</a> /
-          <a href="https://github.com/LiuHengyu321/IR3D-Bench">code</a>
+          <a href="https://ir3d-bench.github.io/">Project Page</a> /
+          <a href="https://ieeexplore.ieee.org/document/10012542">Paper</a> /
+          <a href="https://github.com/LiuHengyu321/IR3D-Bench">Code</a>
 
           <br><strong>Keywords</strong>: 3D Scene Understanding; Vision-Language Model; Inverse
           Rendering
-          <br><strong>Summary</strong>: We propose IR3D-Bench, a benchmark that challenges VLMs to demonstrate real
-          scene understanding by actively recreating 3D structures from images using tools. This
-          "understanding-by-creating" approach that probes the generative and tool-using capacity of vision-language
-          agents (VLAs), moving beyond the descriptive or conversational capacity measured by traditional scene
-          understanding benchmarks.
+          <br><strong>Summary</strong>: <span class="summary-text">IR3D-Bench evaluates whether vision-language agents understand scenes by asking them to reconstruct 3D structure
+                  with tools. The benchmark moves beyond captioning toward understanding-by-creating.</span>
         </td>
       </tr>
 
@@ -451,13 +553,11 @@
           <br>
           <a href="https://yes-u-kan.github.io/">project page/</a>
           <a href="https://arxiv.org/pdf/2406.02918">paper/</a>
-          <a href="https://github.com/CUHK-AIM-Group/U-KAN">code</a>
+          <a href="https://github.com/CUHK-AIM-Group/U-KAN">Code</a>
           <br><strong>Keywords</strong>: Kolmogorov-Arnold Networks; Medical Image
           Segmentation/Generation; Medical Backbone
-          <br><strong>Summary</strong>: We propose the first KAN-based medical backbone,
-          U-KAN, which can be seamlessly integrated with existing medical image segmentation
-          and generation models to boost their performance with minimal computational
-          overhead. <strong>This work has been cited more than 250 times in one year.</strong>
+          <br><strong>Summary</strong>: <span class="summary-text">U-KAN introduces a Kolmogorov-Arnold Network backbone for medical segmentation and generation. It can plug into
+                  existing models with low overhead and has become a highly cited medical imaging backbone.</span>
         </td>
       </tr>
 
@@ -477,17 +577,13 @@
           Hengyu Liu, Yuehao Wang, Chenxin Li, Ruisi Cai, Kevin Wang, <strong>Wuyang Li</strong>, Pavlo Molchanov,
           Peihao Wang, Zhangyang Wang
           <br>
-          <a href="https://flexgs.github.io/">project page</a> /
+          <a href="https://flexgs.github.io/">Project Page</a> /
           <a
-            href="https://openaccess.thecvf.com/content/CVPR2025/html/Liu_FlexGS_Train_Once_Deploy_Everywhere_with_Many-in-One_Flexible_3D_Gaussian_CVPR_2025_paper.html">paper</a>
-          <a href="https://github.com/LiuHengyu321/FlexGS">code</a>
+            href="https://openaccess.thecvf.com/content/CVPR2025/html/Liu_FlexGS_Train_Once_Deploy_Everywhere_with_Many-in-One_Flexible_3D_Gaussian_CVPR_2025_paper.html">Paper</a> / 
+          <a href="https://github.com/LiuHengyu321/FlexGS">Code</a>
           <br><strong>Keywords</strong>: Efficient Gaussian Splatting; Flexible Rendering
-          <br><strong>Summary</strong>: We propose FlexGS, which can be trained
-          once and seamlessly adapt to varying computational constraints, eliminating the need for costly retraining or
-          finetuning for each configuration / hardware constraint. Given
-          an input specifying the desired model size, our method selects and transforms a subset of Gaussians to meet
-          the memory requirements while maintaining considerable rendering
-          performance.
+          <br><strong>Summary</strong>: <span class="summary-text">FlexGS trains one 3D Gaussian Splatting model that adapts to different memory and compute budgets. It selects
+                  and transforms Gaussian subsets at deployment time, avoiding repeated retraining for each hardware target.</span>
         </td>
       </tr>
       <tr class="paper-item" data-category="autonomous-mobility" onmouseout="nerfsuper_stop()"
@@ -506,16 +602,14 @@
           <br>
           <strong>Wuyang Li</strong>, Xinyu Liu, Jiayi Ma, Yixuan Yuan
           <br>
-          <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7221_ECCV_2024_paper.php">paper</a>
+          <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7221_ECCV_2024_paper.php">Paper</a>
           /
-          <a href="https://github.com/CUHK-AIM-Group/CLIFF?tab=readme-ov-file">code</a>
+          <a href="https://github.com/CUHK-AIM-Group/CLIFF?tab=readme-ov-file">Code</a>
           /
-          <a href="https://www.youtube.com/watch?v=jvb9VP-l2rY">video</a>
+          <a href="https://www.youtube.com/watch?v=jvb9VP-l2rY">Video</a>
           <br><strong>Keywords</strong>: Open-Vocabulary Object Detection; Diffusion Model
-          <br><strong>Summary</strong>: This work aims to detect objects in unseen classes. We explore an advanced
-          generative paradigm with distribution perception and propose a novel framework based on the diffusion model,
-          coined Continual Latent Diffusion (CLIFF), which formulates a continual distribution transfer among the
-          object, image, and text latent space probabilistically.
+          <br><strong>Summary</strong>: <span class="summary-text">CLIFF tackles open-vocabulary object detection with a continual latent diffusion framework. It models
+                  distribution transfer among object, image, and text latent spaces to better recognize unseen classes.</span>
         </td>
       </tr>
 
@@ -537,15 +631,14 @@
           Chenxin Li*, Yuzhi Huang*, <strong>Wuyang Li</strong>, Hengyu Liu, Xinyu Liu, Qing Xu, Zhen Chen, Yue Huang,
           Yixuan Yuan
           <br>
-          <a href="https://a-sa-m.github.io/">project page</a> /
+          <a href="https://a-sa-m.github.io/">Project Page</a> /
           <a
-            href="https://proceedings.neurips.cc/paper_files/paper/2024/file/50ee6db59fca8643dc625829d4a0eab9-Paper-Conference.pdf">paper</a>
+            href="https://proceedings.neurips.cc/paper_files/paper/2024/file/50ee6db59fca8643dc625829d4a0eab9-Paper-Conference.pdf">Paper</a>
           /
-          <a href="https://github.com/chenxinli001/a2sam">code</a>
+          <a href="https://github.com/chenxinli001/a2sam">Code</a>
           <br><strong>Keywords</strong>: SAM; Ambiguous Segmentation;
-          <br><strong>Summary</strong>: As vision foundation models such as SAM demonstrate strong universality,
-          they also produce ambiguous and uncertain predictions. This paper takes a unique path to
-          explore how this flaw can be inverted into an advantage when modeling inherently ambiguous data distributions.
+          <br><strong>Summary</strong>: <span class="summary-text">This work turns SAM's ambiguous predictions into a useful signal for inherently uncertain segmentation. It
+                  models ambiguity directly instead of treating it only as an error.</span>
         </td>
       </tr>
 
@@ -568,15 +661,13 @@
           <strong>Wuyang Li</strong>, Xiaoqing Guo, Yixuan Yuan
           <br>
           <a
-            href="https://openaccess.thecvf.com/content/ICCV2023/papers/Li_Novel_Scenes__Classes_Towards_Adaptive_Open-set_Object_Detection_ICCV_2023_paper.pdf">paper</a>
+            href="https://openaccess.thecvf.com/content/ICCV2023/papers/Li_Novel_Scenes__Classes_Towards_Adaptive_Open-set_Object_Detection_ICCV_2023_paper.pdf">Paper</a>
           /
-          <a href="https://github.com/CityU-AIM-Group/SOMA">code</a>
+          <a href="https://github.com/CityU-AIM-Group/SOMA">Code</a>
           <br><strong>Keywords</strong>: Object Detection; Distribution Shift; Out-of-Distribution
-          <br><strong>Summary</strong>: Previous generalizable object detectors transfer the model to a novel domain
-          free of labels. However, in the real world, besides encountering novel scenes,
-          novel domains always contain novel-class objects de facto, which are ignored. Thus, we formulate and study a
-          more practical setting, Adaptive Open-set Object Detection (AOOD), considering both novel scenes
-          and classes in real-world scenarios.
+          <br><strong>Summary</strong>: <span class="summary-text">AOOD studies object detection under both novel domains and novel classes, a more realistic setting than standard
+                  domain generalization. The framework adapts detectors to changing scenes while recognizing unknown-category
+                  objects.</span>
         </td>
       </tr>
 
@@ -598,13 +689,11 @@
           Qiushi Yang, <strong>Wuyang Li</strong>, Baopu Li, Yixuan Yuan
           <br>
           <a
-            href="https://openaccess.thecvf.com/content/ICCV2023/papers/Yang_MRM_Masked_Relation_Modeling_for_Medical_Image_Pre-Training_with_Genetics_ICCV_2023_paper.pdf">paper</a>
+            href="https://openaccess.thecvf.com/content/ICCV2023/papers/Yang_MRM_Masked_Relation_Modeling_for_Medical_Image_Pre-Training_with_Genetics_ICCV_2023_paper.pdf">Paper</a>
 
           <br><strong>Keywords</strong>: Multi-modal Pretraining; Medical Imaging Analysis
-          <br><strong>Summary</strong>: We propose leveraging genetics to boost image pre-training and present a masked
-          relation modeling (MRM) framework. Instead of explicitly masking input data, which in previous MIM methods can
-          lose disease-related semantics, we design relation masking to mask token-wise feature relations at
-          both self- and cross-modality levels.
+          <br><strong>Summary</strong>: <span class="summary-text">MRM uses genetic information to guide medical image pre-training. Relation masking preserves disease-relevant
+                  semantics by masking feature relations rather than raw input pixels.</span>
         </td>
       </tr>
 
@@ -627,12 +716,10 @@
           Xiaoyuan Liu, <strong>Wuyang Li</strong>, Takeshi Yamaguchi, Zihan Geng, Takuo
           Tanaka, Din Ping Tsai, Mu Ku Chen
           <br>
-          <a href="https://pubs.acs.org/doi/full/10.1021/acsphotonics.3c01594">paper</a>
+          <a href="https://pubs.acs.org/doi/full/10.1021/acsphotonics.3c01594">Paper</a>
           <br><strong>Keywords</strong>: Metalens; Stereo Vision; Autonomous Driving
-          <br><strong>Summary</strong>: A metalens is a novel flat optical device with an artificial nanoantenna array
-          that manipulates light. In this work, we use metalenses to
-          enhance the stereo vision system for autonomous driving, achieving superior
-          performance with reduced physical size and weight.
+          <br><strong>Summary</strong>: <span class="summary-text">This work uses metalenses to make stereo driving vision smaller and lighter. The optical design improves
+                  perception performance while reducing the physical footprint of the camera system.</span>
         </td>
       </tr>
 
@@ -657,16 +744,13 @@
           <strong>Wuyang Li</strong>, Jie Liu, Bo Han, Yixuan Yuan
           <br>
           <a
-            href="https://openaccess.thecvf.com/content/CVPR2023/html/Li_Adjustment_and_Alignment_for_Unbiased_Open_Set_Domain_Adaptation_CVPR_2023_paper.html">paper</a>
+            href="https://openaccess.thecvf.com/content/CVPR2023/html/Li_Adjustment_and_Alignment_for_Unbiased_Open_Set_Domain_Adaptation_CVPR_2023_paper.html">Paper</a>
           /
-          <a href="https://github.com/CityU-AIM-Group/Anna">code</a>/
-          <a href="https://www.youtube.com/watch?v=hFZn16ntyXw">video</a>
+          <a href="https://github.com/CityU-AIM-Group/Anna">Code</a>/
+          <a href="https://www.youtube.com/watch?v=hFZn16ntyXw">Video</a>
           <br><strong>Keywords</strong>: Open Set Domain Adaptation (OSDA); Causal Theory
-          <br><strong>Summary</strong>: This work aims to transfer a model from a label-rich domain to a label-free
-          one containing novel-class samples. Existing works overlook abundant novel-class semantics hidden in the
-          source domain, leading to biased model learning and transfer. To address this, we propose a novel
-          causality-driven solution with the unexplored front-door adjustment theory, and then implement it with a
-          theoretically grounded framework, coined AdjustmeNt aNd Alignment (ANNA), to achieve an unbiased OSDA.
+          <br><strong>Summary</strong>: <span class="summary-text">ANNA addresses open-set domain adaptation with a causality-driven front-door adjustment strategy. It uses
+                  source-domain novel-class semantics to reduce biased transfer to unlabeled target domains.</span>
         </td>
       </tr>
 
@@ -689,17 +773,14 @@
           <br>
           <strong>Wuyang Li</strong>, Xinyu Liu, Yixuan Yuan
           <br>
-          <a href="https://arxiv.org/pdf/2203.06398.pdf">paper</a> /
-          <a href="https://github.com/CityU-AIM-Group/SIGMA">code</a> /
+          <a href="https://arxiv.org/pdf/2203.06398.pdf">Paper</a> /
+          <a href="https://github.com/CityU-AIM-Group/SIGMA">Code</a> /
           <a href="https://zhuanlan.zhihu.com/p/492956292">知乎</a>
 
           <br><strong>Keywords</strong>: Domain Adaptive Object Detection (DAOD); Graph
           Matching
-          <br><strong>Summary</strong>: DAOD leverages a labeled domain to learn an object detector generalizing to a
-          novel domain free of annotations. Recent advances align class-conditional distributions by narrowing down
-          cross-domain prototypes. Despite their success, they ignore significant within-class variance and
-          domain-mismatched semantics. To solve these issues, we propose a novel SemantIc-complete Graph MAtching
-          (SIGMA) framework, which completes mismatched semantics and reformulates the adaptation with graph matching.
+          <br><strong>Summary</strong>: <span class="summary-text">SIGMA improves domain adaptive object detection by completing mismatched semantics and aligning them with graph
+                  matching. It captures within-class variance that prototype-only alignment can miss.</span>
 
         </td>
       </tr>
@@ -720,14 +801,11 @@
           <br>
           Xinyu Liu, <strong>Wuyang Li</strong>, Qiushi Yang, Baopu Li, Yixuan Yuan
           <br>
-          <a href="https://arxiv.org/abs/2204.02620">paper</a> /
-          <a href="https://github.com/CityU-AIM-Group/NLTE">code</a>
+          <a href="https://arxiv.org/abs/2204.02620">Paper</a> /
+          <a href="https://github.com/CityU-AIM-Group/NLTE">Code</a>
           <br><strong>Keywords</strong>: Object Detection; Domain Shift; Noisy Label
-          <br><strong>Summary</strong>: Existing domain adaptation methods assume that source-domain labels are
-          completely clean, yet large-scale datasets often contain error-prone annotations due to instance ambiguity,
-          which may lead to a biased source distribution and severely degrade the performance of the domain adaptive
-          detector. In this paper, we make the first effort to formulate the noisy setting and propose a Noise
-          Latent Transferability Exploration (NLTE) framework to address this issue.
+          <br><strong>Summary</strong>: <span class="summary-text">NLTE studies domain adaptive object detection when source annotations are noisy. It models label noise and
+                  transferability together to reduce bias from imperfect large-scale labels.</span>
         </td>
       </tr>
 
@@ -750,15 +828,12 @@
           <br>
           <strong>Wuyang Li</strong>, Xinyu Liu, Xiwen Yao, Yixuan Yuan
           <br>
-          <a href="https://ojs.aaai.org/index.php/AAAI/article/view/20031">paper</a> /
-          <a href="https://github.com/CityU-AIM-Group/SCAN">code</a>
+          <a href="https://ojs.aaai.org/index.php/AAAI/article/view/20031">Paper</a> /
+          <a href="https://github.com/CityU-AIM-Group/SCAN">Code</a>
           <br><strong>Keywords</strong>: Object Detection; Domain Shift; Graph-based
           Learning
-          <br><strong>Summary</strong>: In this work, we empirically discover that the key factor leading to the
-          performance drop in cross-domain object detection is the misalignment of semantic information, instead of the
-          bounding box regression and centerness scores. We address this issue by introducing cross-domain
-          semantic-conditioned
-          kernels, which are implemented through a graph-based learning framework.
+          <br><strong>Summary</strong>: <span class="summary-text">SCAN identifies semantic misalignment as a key bottleneck in cross-domain object detection. It uses
+                  semantic-conditioned kernels and graph learning to improve transfer across domains.</span>
         </td>
       </tr>
 
@@ -780,14 +855,13 @@
           <br>
           <strong>Wuyang Li</strong>, Xinyu Liu, Yixuan Yuan
           <br>
-          <a href="https://ieeexplore.ieee.org/document/10012542">paper</a> /
-          <a href="https://github.com/CityU-AIM-Group/SIGMA/tree/SIGMA++">code</a>
+          <a href="https://ieeexplore.ieee.org/document/10012542">Paper</a> /
+          <a href="https://github.com/CityU-AIM-Group/SIGMA/tree/SIGMA++">Code</a>
 
           <br><strong>Keywords</strong>: Domain Adaptive Object Detection;
           Hypergraph Matching
-          <br><strong>Summary</strong>: We propose SIGMA++, an improved version of the pair-wise SIGMA framework that
-          incorporates high-order hypergraph matching. This enhancement effectively addresses domain misalignment issues
-          by enabling group-level adaptation. SIGMA++ achieved the best results on all the popular DAOD benchmarks.
+          <br><strong>Summary</strong>: <span class="summary-text">SIGMA++ extends SIGMA from pairwise graph matching to high-order hypergraph matching. The group-level adaptation
+                  improves robustness across popular DAOD benchmarks.</span>
         </td>
       </tr>
 
@@ -807,18 +881,14 @@
           <br>
           Xinyu Liu, <strong>Wuyang Li</strong>, Yixuan Yuan
           <br>
-          <a href="https://link.springer.com/content/pdf/10.1007/978-3-031-16452-1_30.pdf?pdf=inline%20link">paper</a>
+          <a href="https://link.springer.com/content/pdf/10.1007/978-3-031-16452-1_30.pdf?pdf=inline%20link">Paper</a>
           /
-          <a href="https://github.com/CityU-AIM-Group/FedInI">code</a>
+          <a href="https://github.com/CityU-AIM-Group/FedInI">Code</a>
           <br><strong>Keywords</strong>: Federated Learning; Noisy Label;
           Causal
           Theory
-          <br><strong>Summary</strong>: This paper studies a practical
-          yet challenging federated learning problem: federated
-          abnormality detection with noisy clients (FADN). We make the first
-          effort to reason about FADN as a structural causal model and identify recognition bias as the main cause of
-          performance deterioration. To tackle this problem, we propose an Intervention &amp; Interaction
-          FL framework (FedInI) that uses causal theory to achieve unbiased learning.
+          <br><strong>Summary</strong>: <span class="summary-text">FedInI studies federated abnormality detection with noisy clients through a causal lens. Its intervention and
+                  interaction strategy reduces recognition bias in decentralized medical learning.</span>
         </td>
       </tr>
 
@@ -842,17 +912,14 @@
           <strong>Wuyang Li</strong>, Zhen Chen, Baopu Li, Dingwen Zhang, Yixuan
           Yuan
           <br>
-          <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9615001">paper</a>
+          <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9615001">Paper</a>
           /
-          <a href="https://github.com/CityU-AIM-Group/HTD">code</a>
+          <a href="https://github.com/CityU-AIM-Group/HTD">Code</a>
 
           <br><strong>Keywords</strong>: Generic Object Detection; Graph-based
           Learning
-          <br><strong>Summary</strong>: This work aims to develop a more effective object detector for general use.
-          We propose HTD to discover the heterogeneous feature demands of classification and regression, then solve them
-          through task-decoupled designs that enhance inter-object semantic interaction in the classification
-          branch and improve border information in the regression branch. HTD achieves the best result on the MS COCO
-          benchmark.
+          <br><strong>Summary</strong>: <span class="summary-text">HTD decouples classification and regression because the two detection tasks need different feature interactions.
+                  This task-specific design improves general object detection performance on MS COCO.</span>
         </td>
       </tr>
 
@@ -874,15 +941,14 @@
           Yuzhi Huang, Chenxin Li, Haitao Zhang, Zixu Lin, Yunlong Lin, Hengyu Liu, <strong>Wuyang Li</strong>, Xinyu
           Liu, Jiechao Gao, Yue Huang, Xinghao Ding, Yixuan Yuan
           <br>
-          <a href="https://tao-25.github.io/">project page</a> /
+          <a href="https://tao-25.github.io/">Project Page</a> /
           <a
-            href="https://openaccess.thecvf.com/content/CVPR2025/html/Huang_Track_Any_Anomalous_ObjectA_Granular_Video_Anomaly_Detection_Pipeline_CVPR_2025_paper.html">paper</a>
+            href="https://openaccess.thecvf.com/content/CVPR2025/html/Huang_Track_Any_Anomalous_ObjectA_Granular_Video_Anomaly_Detection_Pipeline_CVPR_2025_paper.html">Paper</a>
           /
-          <a href="https://github.com/yu2hi13/TAO">code</a>
+          <a href="https://github.com/yu2hi13/TAO">Code</a>
           <br><strong>Keywords</strong>: SAM; Video Anomaly Detection; Tracking
-          <br><strong>Summary</strong>: We propose an innovative VAD framework called Track Any Object (TAO), which
-          introduces a Granular Video Anomaly Detection Framework that, for the first time, integrates the detection of
-          multiple fine-grained anomalous objects into a unified framework.
+          <br><strong>Summary</strong>: <span class="summary-text">TAO introduces a granular video anomaly detection pipeline for tracking multiple fine-grained anomalous objects.
+                  It unifies object-level detection and tracking in video anomaly analysis.</span>
         </td>
       </tr>
 
@@ -904,13 +970,12 @@
           <br>
           Chenxin Li, Hengyu Liu, Zhiwen Fan, <strong>Wuyang Li</strong>, Yifan Liu, Panwang Pan, Yixuan Yuan
           <br>
-          <a href="https://gaussian-stego.github.io/">project page</a> /
-          <a href="https://openreview.net/pdf?id=xvhV3LvYTc">paper</a>
-          <a href="https://github.com/LiuHengyu321/FlexGS">code</a>
+          <a href="https://gaussian-stego.github.io/">Project Page</a> /
+          <a href="https://openreview.net/pdf?id=xvhV3LvYTc">Paper</a>
+          <a href="https://github.com/LiuHengyu321/FlexGS">Code</a>
           <br><strong>Keywords</strong>: 3D Gaussian Splatting; Efficient Steganography
-          <br><strong>Summary</strong>: We propose InstantSplamp (Instant Splitting Stamp), a framework that
-          seamlessly integrates the 3D steganography pipeline into large 3D generative models without introducing
-          additional runtime overhead.
+          <br><strong>Summary</strong>: <span class="summary-text">InstantSplamp embeds steganography into large 3D generative Gaussian Splatting models. It adds hidden
+                  information without extra runtime overhead.</span>
         </td>
       </tr>
 
@@ -933,11 +998,11 @@
           <br>
           Yifan Liu, <strong>Wuyang Li</strong>, Weihao Yu, Chenxin Li, Alexandre Alahi, Max Meng, Yixuan Yuan
           <br>
-          <a href="https://cuhk-aim-group.github.io/X-GRM/">project page</a> /
-          <a href="https://arxiv.org/pdf/2505.15235">paper</a>
+          <a href="https://cuhk-aim-group.github.io/X-GRM/">Project Page</a> /
+          <a href="https://arxiv.org/pdf/2505.15235">Paper</a>
           <br><strong>Keywords</strong>: Feed-forward Gaussian Reconstruction Model; Sparse-view X-ray
-          <br><strong>Summary</strong>: We present X-GRM (X-ray Gaussian Reconstruction Model), a large
-          feedforward model for reconstructing 3D CT from sparse-view 2D X-ray projections.
+          <br><strong>Summary</strong>: <span class="summary-text">X-GRM reconstructs 3D CT from sparse-view 2D X-ray projections with a large feed-forward Gaussian model. It
+                  targets efficient volumetric reconstruction from limited radiographic views.</span>
         </td>
       </tr>
 
@@ -959,11 +1024,11 @@
           <br>
           Weihao Yu, Xiaoqing Guo, <strong>Wuyang Li</strong>, Xinyu Liu, Hui Chen, Yixuan Yuan
           <br>
-          <a href="https://ieeexplore.ieee.org/abstract/document/11098750/">paper</a> /
-          <a href="https://github.com/CUHK-AIM-Group/ToothMaker">code</a>
+          <a href="https://ieeexplore.ieee.org/abstract/document/11098750/">Paper</a> /
+          <a href="https://github.com/CUHK-AIM-Group/ToothMaker">Code</a>
           <br><strong>Keywords</strong>: Dental Radiograph Generation; Diffusion Model
-          <br><strong>Summary</strong>: We make the first attempt to investigate diffusion-based dental X-ray image
-          generation and propose ToothMaker, a novel framework specifically designed for the dental domain.
+          <br><strong>Summary</strong>: <span class="summary-text">ToothMaker generates realistic panoramic dental radiographs with disentangled diffusion control. It is designed
+                  specifically for dental X-ray anatomy and imaging constraints.</span>
         </td>
       </tr>
 
@@ -985,10 +1050,10 @@
           <br>
           <strong>Wuyang Li</strong>, Xinyu Liu, Qiushi Yang, Yixuan Yuan
           <br>
-          <a href="https://link.springer.com/chapter/10.1007/978-3-031-72384-1_19">paper</a>
+          <a href="https://link.springer.com/chapter/10.1007/978-3-031-72384-1_19">Paper</a>
           <br><strong>Keywords</strong>: Medical Video Generation; Semi-Supervised Diagnosis
-          <br><strong>Summary</strong>: We enhance semi-supervised diagnosis with generative
-          videos, enabling joint learning across image and video modalities.
+          <br><strong>Summary</strong>: <span class="summary-text">This work uses motion-informed generative videos to improve semi-supervised medical diagnosis. It connects
+                  static images and generated dynamics for stronger cross-modal learning.</span>
         </td>
       </tr>
 
@@ -1009,13 +1074,11 @@
           <br>
           Yufan Hu, Yu Jiang, <strong>Wuyang Li</strong>, Yixuan Yuan
           <br>
-          <a href="https://openreview.net/pdf?id=zZ6TT254Np">paper</a> /
-          <a href="https://github.com/CUHK-AIM-Group/PDH-Diffusion">code</a>
+          <a href="https://openreview.net/pdf?id=zZ6TT254Np">Paper</a> /
+          <a href="https://github.com/CUHK-AIM-Group/PDH-Diffusion">Code</a>
           <br><strong>Keywords</strong>: Brain fMRI Generation; Physiological Dynamics; Diffusion Model
-          <br><strong>Summary</strong>: We propose a Physiological Dynamics-Driven Hierarchical Diffusion Model that
-          integrates brain hierarchical regional interactions through hypergraph-based functional connectivity and
-          multifractal dynamics to generate physiologically realistic fMRI signals with preserved scale-invariant
-          characteristics.
+          <br><strong>Summary</strong>: <span class="summary-text">This hierarchical diffusion model generates physiologically realistic fMRI signals. It integrates functional
+                  connectivity and multifractal dynamics to preserve brain-region interactions.</span>
         </td>
       </tr>
 
@@ -1037,12 +1100,11 @@
           <br>
           Zhibin He, <strong>Wuyang Li</strong>, Yifan Liu, Xinyu Liu, Junwei Han, Tuo Zhang, Yixuan Yuan
           <br>
-          <a href="https://ieeexplore.ieee.org/abstract/document/10767760/">paper</a> /
-          <a href="https://github.com/ZhibinHe/FM-APP">code</a>
+          <a href="https://ieeexplore.ieee.org/abstract/document/10767760/">Paper</a> /
+          <a href="https://github.com/ZhibinHe/FM-APP">Code</a>
           <br><strong>Keywords</strong>: Brain fMRI Analysis; Phenotype Prediction;
-          <br><strong>Summary</strong>: Predicting individual-level non-neuroimaging phenotypes (e.g., fluid
-          intelligence) using brain imaging data is a fundamental goal of neuroscience. We propose the first
-          foundation model for any phenotype prediction via fMRI-to-sMRI knowledge transfer.
+          <br><strong>Summary</strong>: <span class="summary-text">FM-APP predicts diverse non-imaging phenotypes from brain imaging through fMRI-to-sMRI knowledge transfer. It
+                  provides a foundation model for flexible phenotype prediction.</span>
         </td>
       </tr>
 
@@ -1064,15 +1126,13 @@
           Hengyu Liu, Yifan Liu, Chenxin Li, <strong>Wuyang Li</strong>,
           Yixuan Yuan
           <br>
-          <a href="https://lgs-endo.github.io/">project page</a> /
-          <a href="https://arxiv.org/abs/2406.16073">paper</a> /
-          <a href="https://github.com/CUHK-AIM-Group/LGS">code</a>
+          <a href="https://lgs-endo.github.io/">Project Page</a> /
+          <a href="https://arxiv.org/abs/2406.16073">Paper</a> /
+          <a href="https://github.com/CUHK-AIM-Group/LGS">Code</a>
           <br><strong>Keywords</strong>: 4D Gaussian Splatting;
           Light-weight Reconstruction; Surgical Simulation
-          <br><strong>Summary</strong>: We introduce a lightweight 4D Gaussian
-          Splatting framework (LGS) that alleviates the efficiency
-          bottlenecks of both rendering and storage for dynamic endoscopic
-          reconstruction.
+          <br><strong>Summary</strong>: <span class="summary-text">LGS is a lightweight 4D Gaussian Splatting framework for dynamic endoscopic reconstruction. It reduces rendering
+                  and storage costs while preserving surgical scene dynamics.</span>
         </td>
       </tr>
 
@@ -1094,13 +1154,12 @@
           Liu, Zhen Chen, Jing Shao,
           Yixuan Yuan
           <br>
-          <a href="https://en-do-ra.github.io/">project page</a>/
-          <a href="https://arxiv.org/abs/2403.11050">paper</a>/
-          <a href="https://github.com/XGGNet/Endora">code</a>
+          <a href="https://en-do-ra.github.io/">Project Page</a>/
+          <a href="https://arxiv.org/abs/2403.11050">Paper</a>/
+          <a href="https://github.com/XGGNet/Endora">Code</a>
           <br><strong>Keywords</strong>: Medical Video Generation; Surgical Simulation
-          <br><strong>Summary</strong>: We propose Endora, the first medical video generation
-          model that simulates intraoperative endoscopy with
-          high-quality and diverse videos for novel surgical training.
+          <br><strong>Summary</strong>: <span class="summary-text">Endora simulates intraoperative endoscopy with diverse, high-quality medical videos. It supports surgical
+                  training by turning video generation models into endoscopy simulators.</span>
         </td>
       </tr>
 
@@ -1126,15 +1185,12 @@
           Yifan Liu, <strong>Wuyang Li</strong>, Cheng Wang, Hui Chen, Yixuan
           Yuan
           <br>
-          <a href="https://arxiv.org/abs/2409.01691">paper</a>
+          <a href="https://arxiv.org/abs/2409.01691">Paper</a>
           <!-- / -->
           <!-- <a href="">code (soon)</a> -->
           <br><strong>Keywords</strong>: SAM; Tooth Point Cloud Segmentation; Data-efficient Learning
-          <br><strong>Summary</strong>: We leverage SAM to address severe
-          label scarcity in
-          3D
-          point cloud segmentation, achieving strong performance with only a 0.1%
-          label ratio.
+          <br><strong>Summary</strong>: <span class="summary-text">This work applies SAM to 3D tooth point cloud segmentation under sparse labels. It achieves strong performance
+                  with only 0.1% labeled points.</span>
         </td>
       </tr>
 
@@ -1160,18 +1216,15 @@
           <br>
           Xinyu Liu, <strong>Wuyang Li</strong>, Yixuan Yuan
           <br>
-          <a href="https://ieeexplore.ieee.org/document/10132405">paper</a>
+          <a href="https://ieeexplore.ieee.org/document/10132405">Paper</a>
           /
-          <a href="https://github.com/CUHK-AIM-Group/Decoupled-Unbiased-Teacher">code</a>
+          <a href="https://github.com/CUHK-AIM-Group/Decoupled-Unbiased-Teacher">Code</a>
           <br><strong>Keywords</strong>: Source-free Domain Adaptive
           Object
           Detection;
           Causal Theory
-          <br><strong>Summary</strong>: We identify bias at the data,
-          model
-          and
-          prediction
-          levels in SFDA and address it with causal intervention.
+          <br><strong>Summary</strong>: <span class="summary-text">This work identifies data-, model-, and prediction-level bias in source-free domain adaptive medical object
+                  detection. It uses causal intervention to train a more balanced teacher-student detector.</span>
         </td>
       </tr>
 
