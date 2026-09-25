@@ -101,6 +101,13 @@
                   <h2>💥 News</h2>
 
                   <ul class="news-list">
+                    <li><time datetime="2026-09-25">[09-2026]</time> Four papers, <strong>SurgVista</strong>,
+                      <strong>EverAnimate</strong>, <strong>Drift-Resistant Navigation World Model</strong>, and
+                      <strong>Proprio</strong>, have been accepted to <strong>NeurIPS 2026</strong>.
+                      Congrats to all co-authors!</li>
+                    <li><time datetime="2026-06-17">[06-2026]</time> <a
+                        href="https://eccv.ecva.net/virtual/2026/poster/4424"><strong>Social-Mamba</strong></a>
+                      has been accepted to <strong>ECCV 2026</strong>. Congrats to Po-Chien!</li>
 
 
                     <li>[05-2026] Check out our latest AI for Digital Twins work after SVI: <strong>EverAnimate</strong>,
@@ -193,19 +200,19 @@
                       class="highlight-label">Highlighted</span>
                     papers are representative first-author works</p>
                   <div class="publication-filters">
-                    <button type="button" class="filter-btn active" onclick="filterPublications('all', this)">
+                    <button type="button" class="filter-btn active" aria-pressed="true" onclick="filterPublications('all', this)">
                       All Papers
                     </button>
-                    <button type="button" class="filter-btn" onclick="filterPublications('digital-twins', this)">
+                    <button type="button" class="filter-btn" aria-pressed="false" onclick="filterPublications('digital-twins', this)">
                       AI for Digital Twins
                     </button>
-                    <button type="button" class="filter-btn" onclick="filterPublications('autonomous-mobility', this)">
+                    <button type="button" class="filter-btn" aria-pressed="false" onclick="filterPublications('autonomous-mobility', this)">
                       AI for Autonomous Mobility
                     </button>
-                    <button type="button" class="filter-btn" onclick="filterPublications('scientific-innovation', this)">
+                    <button type="button" class="filter-btn" aria-pressed="false" onclick="filterPublications('scientific-innovation', this)">
                       AI for Scientific Innovation
                     </button>
-                    <button type="button" class="filter-btn" onclick="filterPublications('transforming-medicine', this)">
+                    <button type="button" class="filter-btn" aria-pressed="false" onclick="filterPublications('transforming-medicine', this)">
                       AI for Transforming Medicine
                     </button>
                   </div>
@@ -259,8 +266,8 @@
                   </div>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <span class="venue-badge venue-regular">ArXiv 2026</span>
-                  <papertitle>EverAnimate: Minute-Scale Human Animation via Latent Flow Restoration</papertitle>
+                  <span class="venue-badge venue-regular">NeurIPS 2026</span>
+                  <a href="https://everanimate.github.io/homepage/"><papertitle>EverAnimate: Minute-Scale Human Animation via Latent Flow Restoration</papertitle></a>
                   <br>
                   <strong>Wuyang Li</strong>, Yang Gao, Mariam Hassan, Lan Feng, Wentao Pan, Po-Chien Luan, Alexandre
                   Alahi
@@ -269,7 +276,7 @@
                   /
                   <a href="https://arxiv.org/abs/2605.15042">Paper</a>
                   /
-                  Code
+                  <a href="https://github.com/vita-epfl/EverAnimate">Code</a>
                   <br><strong>Keywords</strong>: Digital Human; Minute-Scale Animation; Latent Flow Restoration
                   <br><strong>Summary</strong>: <span class="summary-text">EverAnimate enables minute-scale human
                   animation while preserving character identity and visual quality over long sequences. It uses
@@ -288,18 +295,14 @@
                   </div>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <span class="venue-badge venue-regular">ArXiv 2026</span>
-                  <papertitle>SurgVista: Long-Horizon Surgical World Modeling with Plausible
-                    <span class="title-keep">Instrument-Tissue Dynamics</span></papertitle>
+                  <span class="venue-badge venue-regular">NeurIPS 2026</span>
+                  <a href="https://arxiv.org/abs/2606.19889"><papertitle>SurgVista: Long-Horizon Surgical World Modeling with Plausible
+                    <span class="title-keep">Instrument-Tissue Dynamics</span></papertitle></a>
                   <br>
                   Wentao Pan, <strong>Wuyang Li<sup>&dagger;</sup></strong>, Shengyuan Liu, Xinyu Liu, Hengyu Liu,
                   Yixuan Yuan
                   <br>
-                  Project Page
-                  /
-                  Paper
-                  /
-                  Code
+                  <a href="https://arxiv.org/abs/2606.19889">Paper</a>
                   <br>
                   <strong>Keywords</strong>: Surgical World Model; Digital Twin; Instrument-Tissue Dynamics
                   <br><strong>Summary</strong>: <span class="summary-text">SurgVista builds a long-horizon surgical
@@ -316,21 +319,46 @@
                   </div>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <span class="venue-badge venue-regular">ArXiv 2026</span>
-                  <papertitle>Drift-Resistant Navigation World Model with Anchored Epipolar Guidance</papertitle>
+                  <span class="venue-badge venue-regular">NeurIPS 2026</span>
+                  <a href="https://vita-epfl.github.io/DR-NWM.io/"><papertitle>Drift-Resistant Navigation World Model with Anchored Epipolar Guidance</papertitle></a>
                   <br>
                   Po-Chien Luan, Zimin Xia, <strong>Wuyang Li</strong>, Yang Gao, Alexandre Alahi
                   <br>
-                  Project Page
+                  <a href="https://vita-epfl.github.io/DR-NWM.io/">Project Page</a>
                   /
-                  Paper
-                  /
-                  Code
+                  <a href="https://arxiv.org/abs/2605.24761">Paper</a>
                   <br>
                   <strong>Keywords</strong>: Navigation World Model; Digital Twin; Epipolar Guidance
                   <br><strong>Summary</strong>: <span class="summary-text">This navigation world model uses sparse
                   future anchors and bidirectional epipolar guidance to reduce perceptual and geometric drift. It
                   improves long-horizon visual quality, multi-view consistency, and downstream planning reliability.</span>
+                </td>
+              </tr>
+              <tr class="paper-item" data-category="digital-twins">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="three">
+                    <img class="paper-media" src="images/proprio.png" width="250"
+                      alt="Proprio physical plausibility refinement examples and latent self-scoring overview" loading="lazy">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <span class="venue-badge venue-regular">NeurIPS 2026</span>
+                  <a href="https://vita-epfl.github.io/Proprio/">
+                    <papertitle>Proprio: Latent Self-Scoring and Inference-Time Refinement for Physically Plausible
+                      Video Generation</papertitle>
+                  </a>
+                  <br>
+                  Mariam Hassan, Kaouther Messaoud, <strong>Wuyang Li</strong>, Alexandre Alahi
+                  <br>
+                  <a href="https://vita-epfl.github.io/Proprio/">Project Page</a>
+                  /
+                  <a href="https://arxiv.org/abs/2605.28230">Paper</a>
+                  /
+                  <a href="https://github.com/vita-epfl/Proprio">Code</a>
+                  <br><strong>Keywords</strong>: Physically Plausible Video Generation; Latent Self-Scoring; Inference-Time Refinement
+                  <br><strong>Summary</strong>: <span class="summary-text">Proprio lets a frozen video generator assess
+                  and improve the physical plausibility of its own outputs without additional training. It uses latent
+                  flow residuals to score candidate videos and guide sample selection and inference-time refinement.</span>
                 </td>
               </tr>
               <tr class="paper-item" data-category="digital-twins" onmouseout="nerfsuper_stop()"
@@ -365,6 +393,30 @@
 
 
 
+              <tr class="paper-item" data-category="autonomous-mobility">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="three">
+                    <img class="paper-media" src="images/social-mamba.png" width="250"
+                      alt="Social-Mamba logo" loading="lazy">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <span class="venue-badge venue-regular">ECCV 2026</span>
+                  <a href="https://eccv.ecva.net/virtual/2026/poster/4424">
+                    <papertitle>Social-Mamba: Socially-Aware Trajectory Forecasting with State-Space Models</papertitle>
+                  </a>
+                  <br>
+                  Po-Chien Luan, <strong>Wuyang Li</strong>, Yang Gao, Alexandre Alahi
+                  <br>
+                  <a href="https://arxiv.org/abs/2605.15424">Paper</a>
+                  /
+                  <a href="https://github.com/vita-epfl/Social-Mamba">Code</a>
+                  <br><strong>Keywords</strong>: Human Trajectory Forecasting; Social Interactions; State-Space Models
+                  <br><strong>Summary</strong>: <span class="summary-text">Social-Mamba structures social interactions
+                  as temporal, egocentric, and goal-centric scans. Its Cycle Mamba block and social gate enable accurate,
+                  efficient trajectory forecasting in crowded environments.</span>
+                </td>
+              </tr>
               <tr class="paper-item" data-category="autonomous-mobility" onmouseout="nerfsuper_stop()"
                 onmouseover="nerfsuper_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">

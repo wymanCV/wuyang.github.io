@@ -4,6 +4,7 @@ function filterPublications(category, element) {
 
   buttons.forEach(btn => {
     btn.classList.toggle('active', btn === element);
+    btn.setAttribute('aria-pressed', String(btn === element));
   });
 
   papers.forEach(paper => {
@@ -11,6 +12,14 @@ function filterPublications(category, element) {
     const shouldShow = category === 'all' || categoryList.includes(category);
 
     paper.hidden = !shouldShow;
+    paper.querySelectorAll('video').forEach(video => {
+      if (!shouldShow) {
+        video.pause();
+      } else if (video.autoplay) {
+        const playback = video.play();
+        if (playback) playback.catch(() => {});
+      }
+    });
   });
 }
 
